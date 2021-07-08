@@ -30,9 +30,11 @@ label{
 
 .form{
     background-color: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
     max-width: 1000px;
     margin: 20px auto;
     padding: 20px 0px;
+    border-radius: 20px;
 }
 
 .container{

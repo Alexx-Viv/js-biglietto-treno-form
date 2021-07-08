@@ -10,6 +10,8 @@ var cab = document.getElementById("cab");
 var trainCode = document.getElementById("train-code");
 var ticketPrice = document.getElementById("ticket-price");
 
+var hidden = document.getElementById("wrapper");
+
 button.addEventListener("click", function () {
   var nameValue = nameField.value;
   var kmValue = kmField.value;
@@ -35,6 +37,8 @@ button.addEventListener("click", function () {
   cab.innerHTML = " " + cabNumber;
   ticketPrice.innerHTML = " " + price;
   trainCodeValue.innerHTML = "74837";
+
+  hidden.classList.remove("hidden");
 });
 
 reset.addEventListener("click", function () {
@@ -47,4 +51,7 @@ reset.addEventListener("click", function () {
   cab.innerHTML = "";
   ticketPrice.innerHTML = "";
   trainCode.innerHTML = "";
+
+  hidden.classList.add("hidden");
 });
+

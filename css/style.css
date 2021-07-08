@@ -86,3 +86,7 @@ label{
 .container-result span{
     margin: 20px 0px;
 }
+
+.hidden{
+    visibility: hidden;
+}

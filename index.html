@@ -1,13 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Train Ticket</title>
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!--********** TITLE **********-->
+    <h1>Calcola il prezzo del tuo biglietto</h1>
+    <!--********** FORM **********-->
+    <section class="form">
+        <div class="container">
+        <span>
+          <label for="name">Nome Cognome</label>
+          <input type="text" class="form-field" id="name" />
+        </span>
+        <span>
+          <label for="km">Km da percorrere</label>
+          <input
+            type="number"
+            class="form-field"
+            id="km"
+            value="10"
+            min="10"
+            step="1"
+          />
+        </span>
+        <span>
+          <label for="age">Fascia d'età</label>
+          <select id="age">
+            <option value="min">Junior</option>
+            <option value="mag">Maggiorenne</option>
+            <option value="max">Senior</option>
+          </select>
+        </span>
+      <div class="form-buttons">
+        <button id="generate-ticket">Genera</button>
+        <button id="generate-ticket">Annulla</button>
+      </div>
+    </div>
+    </section>
+    <!--********** TICKET **********-->
+    <section id="ticket-result">
+      <h2>Il tuo biglietto</h2>
+      <div>
+        <p>
+          <strong>Nome Passeggero:</strong><span id="passenger-name"></span>
+        </p>
+        <p><strong>Offerta:</strong><span id="discount"></span></p>
+        <p><strong>Carrozza:</strong><span id="cab"></span></p>
+        <p><strong>Codcie treno:</strong><span id="train-code"></span></p>
+        <p>
+          <strong>Prezzo del biglietto:</strong><span id="ticket-price"></span>
+        </p>
+      </div>
+    </section>
     <script src="./js/app.js"></script>
-</body>
+  </body>
 </html>

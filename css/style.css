@@ -9,7 +9,7 @@ body{
     background-color: #BA1550;
 }
 
-h1{
+h1, h2{
     color: white;
     text-transform: uppercase;
     margin-top: 20px;
@@ -54,7 +54,7 @@ label{
     margin-top: 20px;
 }
 
-#generate-ticket{
+#generate-ticket, #reset{
     color: #BA1550;
     font-weight: bold;
     background-color: lightgray;
@@ -62,4 +62,27 @@ label{
     padding: 5px;
     border-radius: 5px;
     margin: 0 5px;
+}
+
+.ticket-result{
+    background-color: white;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px 0px;
+    border-radius: 20px;
+}
+
+.container-result{
+    display: flex;
+}
+
+.container-result p{
+    display: flex;
+    margin: 10px 40px;
+    flex-direction: column;
+}
+
+.container-result span{
+    margin: 20px 0px;
 }
